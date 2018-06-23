@@ -21,8 +21,7 @@ public class TextAnalizer {
         List<String> words = new ArrayList<>();
         String wordsInText = removePunctuationMarks(text);
         String[] wordsArray = wordsInText.split(" ");
-        for(String word: wordsArray)
-            words.add(word);
+        words = Arrays.asList(wordsArray);
         return words;
     }
 
